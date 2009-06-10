@@ -4,7 +4,18 @@ require 'sinatra'
 
 configure do
 	set :sessions, true
-	require 'lib/boot'
+	
+	gem 'twitter'; require 'twitter'
+
+	begin
+		@@config = YAML::load(open('config'))
+	rescue
+		# write sample
+		File.open('config', 'w') { |f| f.write({ 'key' => 'edit', 'secret' => 'edit' }.to_yaml) }
+	
+		puts "Please edit 'config'"
+		exit
+	end
 end
 
 before do
