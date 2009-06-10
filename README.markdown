@@ -1,4 +1,4 @@
-= Description
+# Description
 
 An application demonstrating the use of [Sign in with 
 Twitter](http://apiwiki.twitter.com/Sign-in-with-Twitter) through the 
@@ -6,13 +6,13 @@ Twitter](http://apiwiki.twitter.com/Sign-in-with-Twitter) through the
 
 Uses [Sinatra](http://www.sinatrarb.com/) as the framework.
 
-== Credits
+## Credits
 
 * Luca Spiller 
 [github](http://www.github.com/lucaspiller/), 
 [website](http//www.stackednotion.com)
 
-== License
+## License
 
 [Creative Commons Attribution 2.0 UK: England & Wales 
 License](http://creativecommons.org/licenses/by/2.0/uk/)
