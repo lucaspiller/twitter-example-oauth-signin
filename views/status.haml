@@ -1,0 +1,8 @@
+%h1 Timeline
+
+- for tweet in @tweets
+  %div.tweet
+    = tweet.text
+    
+%a{ :href => '/signout' }
+  Logout
